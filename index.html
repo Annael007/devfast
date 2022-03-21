@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dev fast</title>
+    <link rel="shortcut icon" href="./img/logo.png">
+    <link rel="stylesheet" href="./css/4/w3.css">
+    <link rel="stylesheet" href="./css/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+<body>
+    <!-- navigation -->
+    <div class="w3-top">
+        <div class="w3-bar w3-black w3-card" id="myNavbar">
+            <a href="#home" class="w3-bar-item w3-button w3-wide">Dev fast</a>
+            <!-- nav droite -->
+            <div class="w3-right w3-hide-small">
+                <a href="#about" class="w3-bar-item w3-button">ABOUT</a>
+                <a href="#team" class="w3-bar-item w3-button">
+                    <i class="fa fa-user"></i> TEAM
+                </a>
+                <a href="#work" class="w3-bar-item w3-button">
+                    <i class="fa fa-th"></i> WORK
+                </a>
+                <a href="#prix" class="w3-bar-item w3-button">
+                    <i class="fa fa-usd"></i> PRIX
+                </a>
+                <a href="#contact" class="w3-bar-item w3-button">
+                    <i class="fa fa-envelope"></i> WORK
+                </a>
+            </div>
+            <!-- Masquez les liens flottants à droite sur les petits écrans et remplacez-les par une icône de menu -->
+            <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+    </div>
+
+    <!-- Barre latérale sur les petits écrans lorsque vous cliquez sur l'icône de menu -->
+    <nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display: none;" id="mySidebar">
+        <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">
+            Close x
+        </a>
+        <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT</a>
+        <a href="#team" onclick="w3_close()" class="w3-bar-item w3-button">TEAM</a>
+        <a href="#work" onclick="w3_close()" class="w3-bar-item w3-button">WORK</a>
+        <a href="#prix" onclick="w3_close()" class="w3-bar-item w3-button">PRIX</a>
+        <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button">CONTACT</a>
+    </nav>
+
+    <!-- En-tête avec image pleine hauteur -->
+    <header class="bf w3-display-container w3-grayscale-min" id="home">
+        <div class="w3-display-container w3-text-white" style="padding: 48px;">
+            <span class="w3-jumbo w3-hide-small">Commencez quelque chose qui compte</span><br>
+            <span class="w3-xxlarge w3-hide-large w3-hide-medium">Commencez quelque chose qui compte</span><br>
+            <span class="w3-large">Arrêtez de perdre un temps précieux avec des projets qui ne vous ressemblent pas.</span>
+            <p>
+                <a href="#about" class="w3-button w3-white w3-padding-large w3-large w3-margin-top w3-opacity w3-hover-opacity-off">
+                    En savoir plus et commencer aujourd'hui
+                </a>
+            </p>
+        </div>
+        <div class="w3-display-bottomleft w3-text-grey w3-large" style="padding:24px 48px">
+            <i class="fa fa-facebook-official w3-hover-opacity"></i>
+            <i class="fa fa-instagram w3-hover-opacity"></i>
+            <i class="fa fa-snapchat w3-hover-opacity"></i>
+            <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+            <i class="fa fa-twitter w3-hover-opacity"></i>
+            <i class="fa fa-linkedin w3-hover-opacity"></i>
+        </div>
+    </header>
+
+    <!-- À propos de la rubrique -->
+    <div class="w3-container" style="padding:128px 16px" id="about">
+        <h3 class="w3-center">À PROPOS DE L'ENTREPRISE</h3>
+        <p class="w3-center w3-large">Principales caractéristiques de notre entreprise</p>
+        <div class="w3-row-padding w3-center" style="margin-top:64px">
+          <div class="w3-quarter">
+            <i class="fa fa-desktop w3-margin-bottom w3-jumbo w3-center"></i>
+            <p class="w3-large">Responsive</p>
+            <p>
+
+            </p>
+          </div>
+          <div class="w3-quarter">
+            <i class="fa fa-heart w3-margin-bottom w3-jumbo"></i>
+            <p class="w3-large">Passion</p>
+            <p>
+
+            </p>
+          </div>
+          <div class="w3-quarter">
+            <i class="fa fa-diamond w3-margin-bottom w3-jumbo"></i>
+            <p class="w3-large">Design</p>
+            <p>
+
+            </p>
+          </div>
+          <div class="w3-quarter">
+            <i class="fa fa-cog w3-margin-bottom w3-jumbo"></i>
+            <p class="w3-large">Support</p>
+            <p>
+
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Section Promo - "Nous connaissons le design" -->
+
+      <!-- Team Section -->
+      <div class="w3-container" style="padding:128px 16px" id="team"><div class="w3-container w3-light-grey" style="padding: 128px 16px;">
+        <div class="w3-row-padding">
+            <div class="w3-col m6">
+              <h3>Nous connaissons le design.</h3>
+              <p><a href="#work" class="w3-button w3-black"><i class="fa fa-th"> </i> Voir nos travaux</a></p>
+            </div>
+            <div class="w3-col m6">
+               <video src="./video/devfast.mp4" height="394" class="w3-round-large" autoplay loop ></video>
+            </div>
+        </div>
+    </div>
+      <!-- nos tems -->
+      <h3 class="w3-center">L'ÉQUIPE</h3>
+      <p class="w3-center w3-large">Ceux qui dirigent cette entreprise</p>
+      <div class="w3-row-padding w3-grayscale" style="margin-top:64px">
+        <div class="w3-col l3 m6 w3-margin-bottom">
+          <div class="w3-card">
+            <img src="./img/a1.png" alt="Anna-el" style="width:100%">
+            <div class="w3-container">
+              <h3>Anna-el Gerard</h3>
+              <p class="w3-opacity">Programmeur & Fondateur</p>
+              <p>
+
+              </p>
+              <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Contact</button></p>
+            </div>
+          </div>
+        </div>
+        <div class="w3-col l3 m6 w3-margin-bottom">
+          <div class="w3-card">
+            <img src="./img/a1.png" alt="Fabrice" style="width:100%">
+            <div class="w3-container">
+              <h3>Fabrice BJ</h3>
+              <p class="w3-opacity"> Web Developer</p>
+              <p>
+
+              </p>
+              <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Contact</button></p>
+            </div>
+          </div>
+        </div>
+        <div class="w3-col l3 m6 w3-margin-bottom">
+          <div class="w3-card">
+            <img src="./img/a1.png" alt="Judex" style="width:100%">
+            <div class="w3-container">
+              <h3>Judex</h3>
+              <p class="w3-opacity">Web Developer</p>
+              <p>
+
+              </p>
+              <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Contact</button></p>
+            </div>
+          </div>
+        </div>
+        <div class="w3-col l3 m6 w3-margin-bottom">
+          <div class="w3-card">
+            <img src="./img/a2.png" alt="Dan" style="width:100%">
+            <div class="w3-container">
+              <h3>Dihariniaina.R</h3>
+              <p class="w3-opacity">Designer & CMS</p>
+              <p>
+
+              </p>
+              <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Contact</button></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Section Promo "Statistiques" -->
+    <div class="w3-container w3-row w3-center w3-dark-grey w3-padding-64">
+        <div class="w3-quarter">
+          <span class="w3-xxlarge">2</span>
+          <br>Partners
+        </div>
+        <div class="w3-quarter">
+          <span class="w3-xxlarge">10</span>
+          <br>Projects Done
+        </div>
+        <div class="w3-quarter">
+          <span class="w3-xxlarge">5</span>
+          <br>Happy Clients
+        </div>
+        <div class="w3-quarter">
+          <span class="w3-xxlarge">1</span>
+          <br>Meetings
+        </div>
+      </div>
+
+      <!-- Section de travail -->
+      <div class="w3-container" style="padding:128px 16px" id="work">
+        <h3 class="w3-center">NOTRE TRAVAIL</h3>
+        <p class="w3-center w3-large">Ce que nous avons fait pour les gens</p>
+      
+        <div class="w3-row-padding" style="margin-top:64px">
+          <div class="w3-col l3 m6">
+            <img src="./img/f1.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="code">
+          </div>
+          <div class="w3-col l3 m6">
+            <img src="./img/f2.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="code">
+          </div>
+          <div class="w3-col l3 m6">
+            <img src="./img/f3.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="code">
+          </div>
+          <div class="w3-col l3 m6">
+            <img src="./img/f4.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="code">
+          </div>
+        </div>
+
+        <div class="w3-row-padding w3-section">
+          <div class="w3-col l3 m6">
+            <img src="./img/f5.jpeg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="A tablet">
+          </div>
+          <div class="w3-col l3 m6">
+            <img src="./img/f6.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="A camera">
+          </div>
+          <div class="w3-col l3 m6">
+            <img src="./img/f7.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="A typewriter">
+          </div>
+          <div class="w3-col l3 m6">
+            <img src="./img/f8.webp" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="A tableturner">
+          </div>
+        </div>
+      </div>
+
+      <!-- Modal pour les images en taille réelle au clic -->
+      <div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+        <span class="w3-button w3-xxlarge w3-black w3-padding-large w3-display-topright" title="Close Modal Image">×</span>
+        <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+          <img id="img01" class="w3-image">
+          <p id="caption" class="w3-opacity w3-large"></p>
+        </div>
+      </div>
+
+      <!-- Rubrique Compétences -->
+      <div class="w3-container w3-light-grey w3-padding-64">
+        <div class="w3-row-padding">
+          <div class="w3-col m6">
+            <h3>Nos compétences.</h3>
+            <p>Nous sommes Developpeur web et des application mobile<br>
+            creation de logiciel.</p>
+            <p>sites web, gestion des projet, gestion d'ecole gestion de voyage<br>
+            logiciel et apllication personnaliser.</p>
+          </div>
+          <div class="w3-col m6">
+            <p class="w3-wide"><i class="fa fa-apple w3-margin-right"></i>Developpement d'applications</p>
+            <div class="w3-grey">
+              <div class="w3-container w3-dark-grey w3-center" style="width:90%">90%</div>
+            </div>
+            <p class="w3-wide"><i class="fa fa-desktop w3-margin-right"></i>Web Developement</p>
+            <div class="w3-grey">
+              <div class="w3-container w3-dark-grey w3-center" style="width:85%">85%</div>
+            </div>
+            <p class="w3-wide"><i class="fa fa-photo w3-margin-right"></i>Photoshop</p>
+            <div class="w3-grey">
+              <div class="w3-container w3-dark-grey w3-center" style="width:75%">75%</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Pricing Section -->
+      <div class="w3-container w3-center w3-dark-grey" style="padding:128px 16px" id="prix">
+        <h3>NOS OFFRES</h3>
+        <p class="w3-large">Choisissez un plan tarifaire qui correspond à vos besoins.</p>
+        <div class="w3-row-padding" style="margin-top:64px">
+          <div class="w3-third w3-section">
+            <ul class="w3-ul w3-white w3-hover-shadow">
+              <li class="w3-black w3-xlarge w3-padding-32">Sites web</li>
+              <li class="w3-padding-16">
+                Pour plus d'info veuillez cliquez sur <b>Sign up</b> et nous contacter s'il vous plait !
+              </li>
+              <li class="w3-padding-16">
+                <h2 class="w3-wide">Ar 10.000</h2>
+                <span class="w3-opacity"></span>
+              </li>
+              <li class="w3-light-grey w3-padding-24">
+                <a href="#contact"><button class="w3-button w3-black w3-padding-large">Sign Up</button></a>
+              </li>
+            </ul>
+          </div>
+          <div class="w3-third">
+            <ul class="w3-ul w3-white w3-hover-shadow">
+              <li class="w3-red w3-xlarge w3-padding-48">Application mobile</li>
+              <li class="w3-padding-16">
+                Pour plus d'info veuillez cliquez sur <b>Sign up</b> et nous contacter s'il vous plait !
+              </li>
+              <li class="w3-padding-16">
+                <h2 class="w3-wide">Ar 50.000</h2>
+              </li>
+              <li class="w3-light-grey w3-padding-24">
+                <a href="#contact"><button class="w3-button w3-black w3-padding-large">Sign Up</button></a>
+              </li>
+            </ul>
+          </div>
+          <div class="w3-third w3-section">
+            <ul class="w3-ul w3-white w3-hover-shadow">
+              <li class="w3-black w3-xlarge w3-padding-32">Logiciel</li>
+              <li class="w3-padding-16">
+                Pour plus d'info veuillez cliquez sur <b>Sign up</b> et nous contacter s'il vous plait !
+              </li>
+              <li class="w3-padding-16">
+                <h2 class="w3-wide">Ar 40.000 </h2>
+              </li>
+              <li class="w3-light-grey w3-padding-24">
+                <a href="#contact"><button class="w3-button w3-black w3-padding-large">Sign Up</button></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- Contact Section -->
+      <form action="mailto:devfast6969@gmail.com">
+        <div class="w3-container w3-light-grey" style="padding:128px 16px" id="contact">
+          <h3 class="w3-center">CONTACT</h3>
+          <p class="w3-center w3-large">Entrons en contact. Envoie-nous un message:</p>
+          <div style="margin-top:48px">
+            <p><i class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right"></i> Toamasina, MADAGASCAR</p>
+            <p><i class="fa fa-phone fa-fw w3-xxlarge w3-margin-right"></i> Phone: +261 34 83 738 58</p>
+            <p><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"> </i> Email: devfast6969@mail.com</p>
+            <br>
+            <form action="/action_page.php" target="_blank">
+              <p><input class="w3-input w3-border" type="text" placeholder="Name" required name="Name"></p>
+              <p><input class="w3-input w3-border" type="email" placeholder="Email" required name="Email"></p>
+              <p><input class="w3-input w3-border" type="text" placeholder="Subject" required name="Subject"></p>
+              <p><textarea class="w3-input w3-border" name="Message" id="" cols="30" rows="10" placeholder="Message" required></textarea></p>
+              <p>
+                <button class="w3-button w3-black" type="submit">
+                  <i class="fa fa-paper-plane"></i> SEND MESSAGE
+                </button>
+              </p>
+            </form>
+            <!-- Image of location/map -->
+            <img src="./img/map.png" class="w3-image w3-greyscale" style="width:100%;margin-top:48px">
+          </div>
+        </div>
+      </form>
+
+      <!-- Footer -->
+<footer class="w3-center w3-black w3-padding-64">
+  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+  <div class="w3-xlarge w3-section">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+  </div>
+  <p>Par Anna-el Gerard</p>
+</footer>
+       
+<script>
+  // Modal Image Gallery
+  function onClick(element) {
+    document.getElementById("img01").src = element.src;
+    document.getElementById("modal01").style.display = "block";
+    var captionText = document.getElementById("caption");
+    captionText.innerHTML = element.alt;
+  }
+  
+  
+  // Toggle between showing and hiding the sidebar when clicking the menu icon
+  var mySidebar = document.getElementById("mySidebar");
+  
+  function w3_open() {
+    if (mySidebar.style.display === 'block') {
+      mySidebar.style.display = 'none';
+    } else {
+      mySidebar.style.display = 'block';
+    }
+  }
+  
+  // Close the sidebar with the close button
+  function w3_close() {
+      mySidebar.style.display = "none";
+  }
+  </script>
+</body>
+</html>
